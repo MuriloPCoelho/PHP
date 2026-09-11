@@ -29,3 +29,42 @@
  */
 
 // seu código aqui
+
+// TODO 1:
+const NUMEROS = [3, 85, 26, 7, 41, 201, 55, 12, 5443];
+$somatorio = 0;
+
+foreach(NUMEROS as $numero) {
+  $somatorio += $numero;
+}
+echo "Soma com foreach: $somatorio\n";
+
+echo "Soma com array_sum: " . array_sum(NUMEROS) . "\n";
+
+// TODO 2:
+const PRODUTOS = ["arroz 5kg" => 14500, "feijão 1kg" => 600, "bolo" => 21000];
+
+foreach(PRODUTOS as $produto => $preco) {
+  echo $produto . ' - ' . $preco . "\n";
+}
+
+// TODO 3: 
+const CARROS = [
+  ["modelo" => "Celta", "marca" => "Chevrolet", "preco_cents" => 2990000, "ano_fabricacao" => 2004,"ano_modelo" => 2005],
+  ["modelo" => "Sandero", "marca" => "Renault", "preco_cents" => 4590000, "ano_fabricacao" => 2014,"ano_modelo" => 2014],
+  ["modelo" => "325i", "marca" => "BMW", "preco_cents" => 34900000, "ano_fabricacao" => 2025,"ano_modelo" => 2026]
+];
+
+foreach(CARROS as $carro) {
+  echo "Modelo: " . $carro['modelo'] . " | " . "Marca:" . $carro['marca'] .  " | " . "Ano: " . $carro['ano_fabricacao']. "/" . $carro['ano_modelo'] ."\n";
+}
+
+$nomeDosCarros = array_map(function ($carro) {
+  return $carro['modelo'];
+}, CARROS);
+
+print_r($nomeDosCarros);
+
+// TODO 4:
+var_dump(in_array("325i", $nomeDosCarros));
+var_dump(in_array("Opala", $nomeDosCarros));
