@@ -22,3 +22,30 @@
  */
 
 // seu código aqui
+
+// TODO 1: 
+const PESSOA = [
+  "nome" => "Jair Inácio",
+  "idade" => 67,
+  "altura_centimetros" => 170,
+  "peso_kilogramas" => 83,
+  "ativo" => true
+];
+
+// TODO 2:
+print_r(PESSOA);
+echo "\n";
+var_dump(PESSOA);
+
+echo "\n";
+
+// TODO 3:
+// echo PESSOA; //PHP Warning: Array to string conversion
+
+// TODO 4:
+var_dump(10 == "10"); //true
+var_dump(10 === "10"); //false
+var_dump(10 == 10.0); //true
+var_dump(10 === 10.0); //false
+var_dump(10 == "10.0"); //true
+var_dump(10 === "10.0"); //false
