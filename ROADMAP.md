@@ -6,7 +6,7 @@ Regra: um módulo só é marcado como concluído quando o exercício **e** (se h
 
 ## Fase 0 — Ambiente
 
-- [ ] `modulos/00-ambiente-e-ferramentas` — PHP instalado no WSL, editor configurado, Git funcionando
+- [x] `modulos/00-ambiente-e-ferramentas` — PHP instalado no WSL, editor configurado, Git funcionando
 
 ## Fase 1 — Fundamentos da linguagem
 
