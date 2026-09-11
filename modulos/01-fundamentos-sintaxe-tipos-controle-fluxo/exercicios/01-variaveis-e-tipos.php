@@ -21,3 +21,57 @@
  */
 
 // seu código aqui
+
+$inteiro = 10;
+$flutuante = 10.0;
+$texto = "10";
+$booleano = true;
+$bit = 1;
+
+echo "TODO 1: \n";
+var_dump($inteiro);
+var_dump($flutuante);
+var_dump($texto);
+var_dump($booleano);
+var_dump($bit);
+var_dump($booleano === $bit);
+var_dump($booleano == $bit);
+
+echo "\n";
+
+echo "TODO 2: \n";
+$texto2 = "42";
+var_dump($texto2);
+var_dump((int)$texto2);
+
+echo "\n";
+echo "TODO 3: \n";
+var_dump(" 0 == '0' => " . (0 == "0"));
+var_dump(" 0 === '0' => " . (0 === "0"));
+var_dump(" '' == null => " . ("" == null));
+var_dump(" '' === null => " . ("" === null));
+var_dump(" '10' == 1e1 => " . ("10" == 1e1));
+var_dump(" '10' === 1e1 => " . ("10" === 1e1));
+var_dump(" '' == ' ' => " . ("" == ' '));
+var_dump(" '' === ' ' => " . ("" === ' '));
+var_dump(" 0 == false => " . (0 == false));
+var_dump(" 0 === false => " . (0 === false));
+var_dump(" false == null => " . (false == null));
+var_dump(" false === null => " . (false === null));
+
+echo "\n";
+echo "TODO 4: \n";
+
+
+if (true) {
+  $escopo = "Apenas uma variável dentro de um bloco if";
+}
+
+var_dump($escopo);
+
+$fora = "Variável fora do bloco if";
+if (true) {
+  $fora = "Blablabla";
+}
+
+var_dump($fora);
